@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>HTML on HOUENOU Johannes</title>
-    <link>https://github.com/johannes60-sk/portfolio/tags/html/</link>
+    <link>https://johannes60-sk.github.io/portfolio/tags/html/</link>
     <description>Recent content in HTML on HOUENOU Johannes</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://github.com/johannes60-sk/portfolio/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://johannes60-sk.github.io/portfolio/tags/html/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>J’ai réussi l’examen de certification HTML5 &amp; CSS3</title>
-      <link>https://github.com/johannes60-sk/portfolio/blog/html-css/</link>
+      <link>https://johannes60-sk.github.io/portfolio/blog/html-css/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/johannes60-sk/portfolio/blog/html-css/</guid>
+      <guid>https://johannes60-sk.github.io/portfolio/blog/html-css/</guid>
       <description>Comment j’ai réussi l’examen de certification  HTML5 &amp;amp; CSS3</description>
     </item>
     

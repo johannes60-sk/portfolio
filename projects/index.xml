@@ -2,43 +2,43 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Projects on HOUENOU Johannes</title>
-    <link>https://github.com/johannes60-sk/portfolio/projects/</link>
+    <link>https://johannes60-sk.github.io/portfolio/projects/</link>
     <description>Recent content in Projects on HOUENOU Johannes</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://github.com/johannes60-sk/portfolio/projects/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://johannes60-sk.github.io/portfolio/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Projet Gestionnaire de Fichiers JSON avec API Node.js et Interface React.js</title>
-      <link>https://github.com/johannes60-sk/portfolio/projects/crud-json/</link>
+      <link>https://johannes60-sk.github.io/portfolio/projects/crud-json/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/johannes60-sk/portfolio/projects/crud-json/</guid>
+      <guid>https://johannes60-sk.github.io/portfolio/projects/crud-json/</guid>
       <description>Ce projet a pour but d’apporter une solution a un problème interne a l&amp;#39;entreprise dans laquelle j&amp;#39;ai effectuer mon stage en simplifiant le processus d&amp;#39;ajout de flux vidéo pour les tests sur une plateforme en ligne</description>
     </item>
     
     <item>
       <title>Projet android X-event: Gestion d&#39;Événements &amp; Géolocalisation Touristique</title>
-      <link>https://github.com/johannes60-sk/portfolio/projects/x-event/</link>
+      <link>https://johannes60-sk.github.io/portfolio/projects/x-event/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/johannes60-sk/portfolio/projects/x-event/</guid>
+      <guid>https://johannes60-sk.github.io/portfolio/projects/x-event/</guid>
       <description>X-event est une application qui permet à la fois de voir les différents lieux touristiques ainsi que les différents événements de divertissement dans Paris</description>
     </item>
     
     <item>
       <title>MedicalApp</title>
-      <link>https://github.com/johannes60-sk/portfolio/projects/medical-app/</link>
+      <link>https://johannes60-sk.github.io/portfolio/projects/medical-app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/johannes60-sk/portfolio/projects/medical-app/</guid>
+      <guid>https://johannes60-sk.github.io/portfolio/projects/medical-app/</guid>
       <description>L&amp;#39;application de suivi des patients à l&amp;#39;hôpital est un outil conçu pour améliorer l&amp;#39;expérience des patients et de leurs accompagnateurs en fournissant des informations en temps réel sur les services de l&amp;#39;hôpital et le temps d&amp;#39;attente.</description>
     </item>
     
     <item>
       <title>BTV&#43;</title>
-      <link>https://github.com/johannes60-sk/portfolio/projects/btv/</link>
+      <link>https://johannes60-sk.github.io/portfolio/projects/btv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/johannes60-sk/portfolio/projects/btv/</guid>
+      <guid>https://johannes60-sk.github.io/portfolio/projects/btv/</guid>
       <description>L’application BTV&#43; de bouygues telecom est une application qui permet aux utilisateurs de regarder la TV où et quand ils le souhaitent, sur leur smartphone ou tablette Android ou iOS</description>
     </item>
     
