@@ -9,6 +9,10 @@ menu:
       name: Home
       url: /
       weight: 10
+    - identifier: resume-hugo
+      name: ResumeHugo
+      url: /resume-hugo
+      weight: 10
     - identifier: blog
       name: Blog
       url: /blog
