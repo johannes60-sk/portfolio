@@ -16,7 +16,7 @@ cover:
 
 La certification **HTML5&CSS3**, également appelée Certification HTML5 et CSS3, est une reconnaissance officielle ou une validation des compétences en matière de conception et de développement web utilisant HTML5 et CSS3. Ces deux technologies sont essentielles pour la création de pages web modernes et interactives.
 
-![](/blog/aws-dva-certification/img2.png)
+![image certificat nodeJS-express-mongoDB ](/blog/nodeJs-express-mongoDB/nodeJs-express-mongoDB.png)
 
 # Format de l’examen
 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque ut dolore, at culpa, magni eligendi tempora ipsa, illo aliquam molestiae officiis blanditiis commodi vero voluptates. Maiores voluptas temporibus eligendi est.
