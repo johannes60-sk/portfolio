@@ -1,0 +1,101 @@
+baseURL: "https://github.com/johannes60-sk/portfolio"
+languageCode: en-us
+title: HOUENOU Johannes
+theme: PaperMod
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: blog
+      name: Blog
+      url: /blog
+      weight: 20
+    - identifier: projects
+      name: Projects
+      url: /projects
+      weight: 30
+    - identifier: experience
+      name: Experience
+      url: /experience
+      weight: 40
+    - identifier: search
+      name: Search
+      url: /search
+      weight: 50
+    # - identifier: tags
+    #   name: Tags
+    #   url: /tags
+    #   weight: 60
+    # - identifier: notes
+    #   name: Notes
+    #   url: https://notes.arkalim.org
+    #   weight: 70
+
+params:
+  # theme
+  showToc: true
+  TocOpen: false
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  hideMeta: false
+
+  # for enchanced SEO
+  env: production
+
+  # Home Page
+  profileMode:
+    enabled: true
+    title: "HOUENOU Johannes"
+    subtitle: Hi 👋! Je m'appelle Johannes, je suis actuellement inscrit en master CTO & Tech Lead à HETIC. Mon parcours académique et professionnel se conjugue avec une alternance au sein d'une start-up innovante spécialisée dans le développement de solutions liées à la gestion des stationnements. Au quotidien, je m'investis pleinement dans des projets variés, mettant à profit mes compétences en programmation pour résoudre des défis techniques.Passionné par la programmation, j'aborde chaque projet avec enthousiasme et créativité. Mon objectif est d'apporter des solutions innovantes et efficaces, tout en continuant à développer mes compétences et à collaborer avec des professionnels partageant la même passion.
+    imageUrl: "home/photo-profile.jpg"
+    imageWidth: 200
+    imageHeight: 200
+    buttons:
+      - name: Resume
+        url: "https://drive.google.com/file/d/1_WCXQrC-t-nA1InePREo2_bWx-GMCc_z/view"
+
+  # List View
+  hideDescriptionInList: false
+
+  # cover image for posts
+  cover:
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+  socialIcons:
+    - name: "email"
+      url: "mailto:houenoujohannes60@gmail.com"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/johannes60/"
+    - name: "github"
+      url: "https://github.com/johannes60-sk"
+    # - name: "youtube"
+    #   url: "https://www.youtube.com/c/AbdurRahmanKalim"
+    # - name: "cv"
+    #   url: "https://drive.google.com/file/d/1U6Gg2RnHSCthtWLbZJBlAEI3V1WGjZty/view"
+
+  # text search
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+# for search using Fuse.js
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# allow HTML in MD
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
