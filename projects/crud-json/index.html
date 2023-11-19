@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Projet Gestionnaire de Fichiers JSON avec API Node.js et Interface React.js | HOUENOU Johannes</title>
+<meta name="keywords" content="JavaScript, ReactJS, Trello, GitHub, NodeJS, ExpressJS">
+<meta name="description" content="Ce projet a pour but d’apporter une solution a un problème interne a l&#39;entreprise dans laquelle j&#39;ai effectuer mon stage en simplifiant le processus d&#39;ajout de flux vidéo pour les tests sur une plateforme en ligne">
+<meta name="author" content="">
+<link rel="canonical" href="https://github.com/johannes60-sk/portfolio/projects/crud-json/">
+<link crossorigin="anonymous" href="/johannes60-sk/portfolio/assets/css/stylesheet.d3151d61dbd049c2130e10705f8f2d093979409d3650d8d1b2af7b330936830e.css" integrity="sha256-0xUdYdvQScITDhBwX48tCTl5QJ02UNjRsq97Mwk2gw4=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/johannes60-sk/portfolio/assets/js/highlight.acb54fd32bbc1982428b8850317e45d076b95012730a5936667e6bc21777692a.js" integrity="sha256-rLVP0yu8GYJCi4hQMX5F0Ha5UBJzClk2Zn5rwhd3aSo="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://github.com/johannes60-sk/portfolio/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://github.com/johannes60-sk/portfolio/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://github.com/johannes60-sk/portfolio/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://github.com/johannes60-sk/portfolio/apple-touch-icon.png">
+<link rel="mask-icon" href="https://github.com/johannes60-sk/portfolio/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Projet Gestionnaire de Fichiers JSON avec API Node.js et Interface React.js" />
+<meta property="og:description" content="Ce projet a pour but d’apporter une solution a un problème interne a l&#39;entreprise dans laquelle j&#39;ai effectuer mon stage en simplifiant le processus d&#39;ajout de flux vidéo pour les tests sur une plateforme en ligne" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://github.com/johannes60-sk/portfolio/projects/crud-json/" />
+<meta property="og:image" content="https://github.com/projects/crud-json/addNewJson.png" /><meta property="article:section" content="projects" />
+
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://github.com/projects/crud-json/addNewJson.png" />
+<meta name="twitter:title" content="Projet Gestionnaire de Fichiers JSON avec API Node.js et Interface React.js"/>
+<meta name="twitter:description" content="Ce projet a pour but d’apporter une solution a un problème interne a l&#39;entreprise dans laquelle j&#39;ai effectuer mon stage en simplifiant le processus d&#39;ajout de flux vidéo pour les tests sur une plateforme en ligne"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Projects",
+      "item": "https://github.com/johannes60-sk/portfolio/projects/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Projet Gestionnaire de Fichiers JSON avec API Node.js et Interface React.js",
+      "item": "https://github.com/johannes60-sk/portfolio/projects/crud-json/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Projet Gestionnaire de Fichiers JSON avec API Node.js et Interface React.js",
+  "name": "Projet Gestionnaire de Fichiers JSON avec API Node.js et Interface React.js",
+  "description": "Ce projet a pour but d’apporter une solution a un problème interne a l'entreprise dans laquelle j'ai effectuer mon stage en simplifiant le processus d'ajout de flux vidéo pour les tests sur une plateforme en ligne",
+  "keywords": [
+    "JavaScript", "ReactJS", "Trello", "GitHub", "NodeJS", "ExpressJS"
+  ],
+  "articleBody": "Intro Ce projet a pour but d’apporter une solution a un problème interne en simplifiant le processus d’ajout de flux vidéo pour les tests sur une plateforme en ligne. En effet, lorsque l’on avait besoin de tester un nouveau flux vidéo sur la plateforme, il fallait faire une demande à la personne chargée d’ajouter le JSON contenant le nouveau flux vidéo sur le serveur ftp afin de le rentre ensuite disponible sur la plateforme de test. L’interface de gestion de fichier JSON réalisée en reactjs permettra à toute personne lambda de créer, modifier et supprimer facilement les fichiers JSON contenant les liens des flux vidéo. Et grâce à une api connectée à cette interface le fichier JSON créé est directement envoyé sur le serveur ftp le rendant ainsi disponibles immédiatement sur la plateforme de test.\nPresentation des interfaces Page d’inscription\nAfin de pouvoir utiliser la plateforme on est invités à créer un compte et à s’y connecter. Pour stocker les données des utilisateur, j’ai eu a créer une base de donné NoSQL sur firebase. Concernant les problème de sécurité lors de l’inscription et d’authentification à la plateforme, firebase dispose de fonction que j’ai eu à implémenter et adapté pour l’inscription et la connexion de l’utilisateur\nPage de création d’un fichier JSON\nSur cette page l’utilisateur désirant créer son fichier json est invité à renseigner les informations nécessaires(nom du fichier json, nom du flux,l’url du flux vidéo et l’id) . L’utilisateur a la possibilité d’ajouter dans son fichier JSON autant de flux vidéo qu’il souhaite et une fois terminé il fait la validation qui lance ensuite la création de son fichier JSON\nEdition ou suppression d’un fichier JSON\nSur cette page l’utilisateur pourra voir dans la liste déroulante les fichiers json disponibles sur le serveur ftp. Il pourra donc choisir le fichier qu’il souhaite modifier ou supprimer . Lorsque l’utilisateur choisit son fichier, un éditeur JSON s’ouvre automatiquement et charge le contenu du fichier. L’utilisateur pourra donc interagir directement dans l’éditeur et faire ces modifications.\nsuppression d’un fichier JSON\nSur cette page l’utilisateur pourra voir dans la liste déroulante les fichiers json disponibles sur le serveur ftp. Il pourra donc choisir le fichier qu’il souhaite modifier ou supprimer . Lorsque l’utilisateur choisit son fichier, un éditeur JSON s’ouvre automatiquement et charge le contenu du fichier. L’utilisateur pourra donc interagir directement dans l’éditeur et faire ces modifications.\nResources Depot Git du projet ",
+  "wordCount" : "400",
+  "inLanguage": "en",
+  "image":"https://github.com/projects/crud-json/addNewJson.png","datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://github.com/johannes60-sk/portfolio/projects/crud-json/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "HOUENOU Johannes",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://github.com/johannes60-sk/portfolio/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header sticky-header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://github.com/johannes60-sk/portfolio" accesskey="h" title="HOUENOU Johannes (Alt + H)">HOUENOU Johannes</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://github.com/johannes60-sk/portfolio/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/johannes60-sk/portfolio/blog" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/johannes60-sk/portfolio/projects" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/johannes60-sk/portfolio/experience" title="Experience">
+                    <span>Experience</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/johannes60-sk/portfolio/search" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://github.com/johannes60-sk/portfolio">Home</a>&nbsp;»&nbsp;<a href="https://github.com/johannes60-sk/portfolio/projects/">Projects</a></div>
+    <h1 class="post-title">
+      Projet Gestionnaire de Fichiers JSON avec API Node.js et Interface React.js
+    </h1>
+    <div class="post-description">
+      Ce projet a pour but d’apporter une solution a un problème interne a l&#39;entreprise dans laquelle j&#39;ai effectuer mon stage en simplifiant le processus d&#39;ajout de flux vidéo pour les tests sur une plateforme en ligne
+    </div>
+    <div class="post-meta">
+
+
+Mars 2023
+
+</div>
+  </header> 
+<figure class="entry-cover"><img loading="lazy" src="https://github.com/projects/crud-json/addNewJson.png" alt="">
+        
+</figure><div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">‎ Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#intro" aria-label="Intro">Intro</a></li>
+                <li>
+                    <a href="#presentation-des-interfaces" aria-label="Presentation des interfaces">Presentation des interfaces</a></li>
+                <li>
+                    <a href="#resources" aria-label="Resources">Resources</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h2 id="intro">Intro<a hidden class="anchor" aria-hidden="true" href="#intro">#</a></h2>
+<p>Ce projet a pour but d’apporter une solution a un problème interne en <strong>simplifiant le processus d&rsquo;ajout de flux vidéo pour les tests sur une plateforme en ligne</strong>. En effet, lorsque l’on avait besoin de tester un nouveau flux vidéo sur la plateforme, il fallait faire une demande à la personne chargée d’ajouter le JSON  contenant le nouveau  flux vidéo sur le serveur ftp afin de le rentre ensuite disponible sur la plateforme de test. L’interface de gestion de fichier JSON  réalisée en reactjs permettra à toute personne lambda  de créer, modifier et supprimer facilement les fichiers JSON contenant les liens des flux vidéo. Et grâce à une api connectée à cette interface le fichier JSON créé est directement envoyé sur le serveur ftp le rendant ainsi disponibles immédiatement sur la plateforme de test.</p>
+<h2 id="presentation-des-interfaces">Presentation des interfaces<a hidden class="anchor" aria-hidden="true" href="#presentation-des-interfaces">#</a></h2>
+<p><strong>Page d&rsquo;inscription</strong></p>
+<p>Afin de pouvoir utiliser la plateforme on est invités à créer un compte et à s&rsquo;y connecter. Pour stocker les données des utilisateur, j’ai eu a créer une base de donné
+NoSQL sur firebase.
+Concernant les problème de sécurité lors de l&rsquo;inscription et  d’authentification à la plateforme, firebase dispose de fonction que j’ai eu à implémenter et adapté pour l&rsquo;inscription et la connexion de l’utilisateur</p>
+<!-- ![](/projects/crud-json/register.png) ![](/projects/crud-json/register_function.png) -->
+<div style="display: flex; justify-content: space-between;">
+    <img src="/projects/crud-json/register.png" id="register_img" alt="Image 1" width="100%">
+    <img src="/projects/crud-json/register_function.png" id="register_function_img" style="display: none;" alt="Image 2" width="100%">
+</div>
+<script>
+    document.getElementById('register_img').addEventListener('mouseover', (e) => {
+        e.target.style.display='none'
+        document.getElementById('register_function_img').style.display='block'
+    })
+
+     document.getElementById('register_img').addEventListener('mouseleave', (e) => {
+        e.target.style.display='block'
+        document.getElementById('register_function_img').style.display='none'
+     })
+
+</script>
+<p><strong>Page de création d’un fichier JSON</strong></p>
+<p>Sur cette page l’utilisateur désirant créer son fichier json est invité à renseigner les informations nécessaires(nom du fichier json, nom du flux,l’url du flux vidéo et l’id) . L&rsquo;utilisateur a la possibilité d’ajouter dans son fichier JSON autant de flux vidéo qu’il souhaite et une fois terminé il fait la validation qui lance ensuite la création de son fichier JSON</p>
+<div style="display: flex; justify-content: space-between;">
+    <img src="/projects/crud-json/addNewJson.png" id="addNewJson" alt="Image 1" width="100%">
+    <img src="/projects/crud-json/requete_create_json.png" id="requete_create_json" style="display: none;" alt="Image 2" width="70%" height="50%">
+</div>
+<script>
+    document.getElementById('addNewJson').addEventListener('mouseover', (e) => {
+        e.target.style.display='none'
+        document.getElementById('requete_create_json').style.display='block'
+    })
+
+     document.getElementById('addNewJson').addEventListener('mouseleave', (e) => {
+        e.target.style.display='block'
+        document.getElementById('requete_create_json').style.display='none'
+     })
+
+</script>
+<p><strong>Edition ou suppression d’un fichier JSON</strong></p>
+<p>Sur cette page l’utilisateur pourra voir dans la liste déroulante  les fichiers json disponibles sur le serveur ftp. Il pourra donc choisir le fichier qu’il souhaite modifier ou supprimer . Lorsque l’utilisateur choisit son fichier, un éditeur JSON s’ouvre automatiquement et charge le contenu du fichier. L’utilisateur pourra donc interagir directement dans l&rsquo;éditeur et faire ces modifications.</p>
+<div style="display: flex; justify-content: space-between;">
+    <img src="/projects/crud-json/edit.png" id="edit" alt="Image 1" width="100%">
+    <img src="/projects/crud-json/route_edit.png" id="route_edit" style="display: none;" alt="Image 2" width="70%" height="50%">
+</div>
+<script>
+    document.getElementById('edit').addEventListener('mouseover', (e) => {
+        e.target.style.display='none'
+        document.getElementById('route_edit').style.display='block'
+    })
+
+     document.getElementById('edit').addEventListener('mouseleave', (e) => {
+        e.target.style.display='block'
+        document.getElementById('route_edit').style.display='none'
+     })
+
+</script>
+<p><strong>suppression d’un fichier JSON</strong></p>
+<p>Sur cette page l’utilisateur pourra voir dans la liste déroulante  les fichiers json disponibles sur le serveur ftp. Il pourra donc choisir le fichier qu’il souhaite modifier ou supprimer . Lorsque l’utilisateur choisit son fichier, un éditeur JSON s’ouvre automatiquement et charge le contenu du fichier. L’utilisateur pourra donc interagir directement dans l&rsquo;éditeur et faire ces modifications.</p>
+<div style="display: flex; justify-content: space-between;">
+    <img src="/projects/crud-json/confirm_delete.png" id="confirm_delete" alt="Image 1" width="100%">
+    <img src="/projects/crud-json/route_delete.png" id="route_delete" style="display: none;" alt="Image 2" width="70%" height="50%">
+</div>
+<script>
+    document.getElementById('confirm_delete').addEventListener('mouseover', (e) => {
+        e.target.style.display='none'
+        document.getElementById('route_delete').style.display='block'
+    })
+
+     document.getElementById('confirm_delete').addEventListener('mouseleave', (e) => {
+        e.target.style.display='block'
+        document.getElementById('route_delete').style.display='none'
+     })
+
+</script>
+<h2 id="resources">Resources<a hidden class="anchor" aria-hidden="true" href="#resources">#</a></h2>
+<ul>
+<li><a href="https://github.com/johannes60-sk/stream-easy">Depot Git du projet</a></li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://github.com/johannes60-sk/portfolio/tags/javascript/">JavaScript</a></li>
+      <li><a href="https://github.com/johannes60-sk/portfolio/tags/reactjs/">Reactjs</a></li>
+      <li><a href="https://github.com/johannes60-sk/portfolio/tags/trello/">Trello</a></li>
+      <li><a href="https://github.com/johannes60-sk/portfolio/tags/github/">GitHub</a></li>
+      <li><a href="https://github.com/johannes60-sk/portfolio/tags/nodejs/">NodeJS</a></li>
+      <li><a href="https://github.com/johannes60-sk/portfolio/tags/expressjs/">ExpressJS</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="https://github.com/johannes60-sk/portfolio">HOUENOU Johannes</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

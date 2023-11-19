@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>NodeJS on HOUENOU Johannes</title>
+    <link>https://github.com/johannes60-sk/portfolio/tags/nodejs/</link>
+    <description>Recent content in NodeJS on HOUENOU Johannes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://github.com/johannes60-sk/portfolio/tags/nodejs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>J’ai réussi l’examen de certification NodeJS-Express-MongoDB</title>
+      <link>https://github.com/johannes60-sk/portfolio/blog/nodejs-express-mongodb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://github.com/johannes60-sk/portfolio/blog/nodejs-express-mongodb/</guid>
+      <description>Comment j’ai réussi l’examen de certification NodeJS-Express-MongoDB</description>
+    </item>
+    
+    <item>
+      <title>Projet Gestionnaire de Fichiers JSON avec API Node.js et Interface React.js</title>
+      <link>https://github.com/johannes60-sk/portfolio/projects/crud-json/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://github.com/johannes60-sk/portfolio/projects/crud-json/</guid>
+      <description>Ce projet a pour but d’apporter une solution a un problème interne a l&amp;#39;entreprise dans laquelle j&amp;#39;ai effectuer mon stage en simplifiant le processus d&amp;#39;ajout de flux vidéo pour les tests sur une plateforme en ligne</description>
+    </item>
+    
+    <item>
+      <title>Développeur JavaScript</title>
+      <link>https://github.com/johannes60-sk/portfolio/experience/bouyguetelecom/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://github.com/johannes60-sk/portfolio/experience/bouyguetelecom/</guid>
+      <description>Bouygue Telecom (Meudon la foret)</description>
+    </item>
+    
+  </channel>
+</rss>
